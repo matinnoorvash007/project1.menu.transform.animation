@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none; 
+   
+}
+.pro1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.pro1>ul>span{
+    font-size: 35px;
+    display: flex;
+    color: rgb(0, 0, 0);
+  padding: 5px;
+}
+.pro1>ul{
+    width: 80%;
+    display: flex;
+}
+.pro1>ul>li{
+flex-grow: 1;
+}
+.pro1>ul>li>a{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: rgb(197, 50, 50);
+    transition: 1s;
+    top: 5px;
+    font-size: 30px;
+}
+.pro1>ul>li>a:hover{
+    background-color: rgb(183, 192, 209);
+   
+}
+.pro2{
+    width: 100%;
+   
+}
+.pro2>img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    opacity: 65%;
+}
+.pro2>h1{
+   font-size: 75px;
+    text-transform: capitalize;
+    top: 300px;
+  left: 300px;
+  transition: 2s;
+  position: absolute;
+  color: rgb(173, 42, 42);
+
+}
+.pro2>h4{
+    
+  width: 320px;
+  height: 50px;
+  align-items: center;
+   border: 5px solid rgb(197, 50, 50) ;
+    font-size: 30px;
+   position: absolute;
+    text-transform: capitalize;
+    top: 475px;
+  left: 500px;
+  transition: 2s;
+  text-align: center;
+}
+
+.pro2>h2:hover{
+color:white;
+}
+.pro2>h1:hover{
+color:white;
+transform: perspective(800px)translateZ(200px);
+}
+.pro2>h4:hover{
+color:white;
+    border-color: rgb(64, 67, 77);
+}
+
+.pro3{
+ width: 85vh;
+display: flex;
+}
+.pro3>img{
+    width: 30vh;
+ height: 30vh;
+ object-fit: cover;
+ transition: 1s;
+margin: 25px;
+}
+.pro3>img:hover{
+transform: rotate3d(1,1,1,365deg);
+}
+.pro3>img:nth-of-type(2):hover{
+transform: rotate3d(0,1,0,365deg);
+}
+.pro3>img:nth-of-type(4):hover{
+transform: rotate3d(0,1,0,365deg);
+}
+.pro5{
+    width: 100%;
+height: 70vh;
+background-image: linear-gradient(45deg,red,black);
+}
+.pro5>h1{
+    font-size: 35px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+.pro5>p{
+    font-size: 20px;
+    display: flex;
+top: 10px;
+text-align: center;
+color: white;
+}
+.pro5>img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 25px  500px;
+   transition: 6s;
+   animation: para1 ease-in-out 5s infinite alternate;
+}
+
+
+.pro6{
+    width: 1200px;
+    height: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pro6 figure{
+    width: 750px;
+    height: 550px;
+ 
+   
+}
+.pro6 figure>img{
+    width: 100%;
+    height: 50%;
+object-fit: cover;
+animation: para1 ease-in-out 5s infinite alternate;
+}
+.pro6 figcaption{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around; 
+   
+}
+.pro6 figcaption>*{
+width: 100%;
+text-align: center;
+text-transform: capitalize;
+color: rgb(197, 50, 50);
+}
+@keyframes para1{
+0%{
+    transform: perspective(800px)rotate3d(0,1,0,90deg);
+}
+25%{
+    transform: perspective(800px)rotate3d(0,1,0,180deg); 
+}
+50%{
+    transform: perspective(800px)rotate3d(0,1,0,270deg);
+}
+100%{
+    transform: perspective(800px)rotate3d(0,1,0,360deg); 
+}
+
+}
+.pro7{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(45deg,black,red);
+    color: white;
+}
+.pro7>img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    margin: 100px  700px;
+    position: absolute;
+    
+}
+.pro7>p{
+    font-size: 20px;
+width: 350px;
+height: 350px;
+color: white;
+text-align: center;
+display: flex;
+position: relative;
+top: 120px;
+left: 150px;
+
+}
+.pro8{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+}
+.pro8>h1{
+    text-align: center;
+    color: white;
+    animation: para2 ease-in-out 2s infinite alternate;
+}
+@keyframes para2{
+    0%{
+    transform:scale(.75);
+    color: white;
+}
+25%{
+    transform:scale(1);
+    color: red;
+}
+
+}
+.pro8>ul>li>a{
+    color: white;
+margin: 10px 90px;
+    font-size: 40px;
+
+}
+.pro8>ul>li>a:nth-last-of-type(1){
+font-size: 25px;
+
+animation: para2 ease-in-out 2s infinite alternate;
+}
+.pro8>ul>li>a:nth-last-of-type(2){
+font-size: 25px;
+
+animation: para2 ease-in-out 2s infinite alternate;
+}
+.pro8>ul>li>a:nth-last-of-type(3){
+font-size: 25px;
+
+animation: para2 ease-in-out 2s infinite alternate;
+}
+</style>
+<body>
+    <div class="pro1">        
+<ul>
+    <img src="1200px-Alfa_Romeo.svg.png" alt="">
+    <span class="icon-user"></span>
+    <span class="icon-share2"></span>
+    <li><a href="">menu</a> </li>
+    <li><a href="">home</a></li>
+    <li><a href="">gallery</a></li>
+    <li><a href="">about us</a></li>
+    <li><a href="">sign up</a></li>
+    </ul>
+</div>
+  <div class="pro2">
+<img src="alfa-romeo-building-signage-3hl0f7ninm70dcau.jpg" alt="">
+<h1>alfa romeo company</h1>
+
+<h4>click now</h4>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+    <div class="pro3">
+       <img src="alfa-romeo-stelvio-quadrifoglio-zvqnddrtx0ysemp0.jpg" alt="">
+       <img src="hilltop-alfa-romeo-8c-competizione-ehsjyc04lhw25lyu.jpg" alt="">
+       <img src="silver-alfa-romeo-4c-91akjsotdalgbs2m.jpg" alt="">
+       <img src="plant-field-alfa-romeo-giulia-320qpng31m33a1ax (1).jpg" alt="">
+    </div>
+    <div class="pro5">
+<h1>sale now</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum cupiditate praesentium, quidem, culpa sint quae id animi totam sit nisi doloribus nihil laboriosam ducimus nemo, eligendi molestiae voluptates dignissimos!
+Blanditiis delectus odit reiciendis, ullam quam adipisci ad totam illo aperiam tempore quibusdam autem cum perspiciatis, ducimus facilis ratione possimus! Autem at, neque enim vitae dolor necessitatibus odio molestiae omnis!
+Quae soluta vero cupiditate minus fugiat doloremque vitae provident omnis id impedit quam quos blanditiis est reiciendis ex repellat commodi et, praesentium aut delectus quasi consequuntur laboriosam alias fuga. Debitis!
+Dolore ratione illo expedita nobis fugit ipsum consequuntur rerum, a impedit odit repellat, tempore saepe qui beatae aut hic suscipit eaque adipisci, perspiciatis quia exercitationem. Officia alias ad delectus veritatis.
+Blanditiis placeat labore alias eos quibusdam nihil est in minus modi, nostrum nisi totam itaque corrupti, a hic molestiae harum ducimus quasi quia voluptates fugiat error voluptatibus! Reprehenderit, tenetur rem!</p>
+    <img src="1200px-Alfa_Romeo.svg.png" alt="">
+    </div>
+<div class="pro6">
+<figure>
+    <img src="red-giulia-quadrifoglio-alfa-romeo-wwboq6r6z28llv4h.jpg" alt="">
+    <figcaption>
+        <h1>alfa romeo biography</h1>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Incidunt at doloremque dolorem sapiente tempore quidem mollitia possimus eius, quaerat quos, dicta ex 
+            exercitationem iusto assumenda. In quisquam voluptatibus rem dolorum?</p>
+    </figcaption>
+</figure>
+    <figure>
+        <img src="silver-alfa-romeo-4c-91akjsotdalgbs2m.jpg" alt="">
+        <figcaption>
+            <h1>alfa romeo biography</h1>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Incidunt at doloremque dolorem sapiente tempore quidem mollitia possimus eius, quaerat quos, dicta ex 
+                exercitationem iusto assumenda. In quisquam voluptatibus rem dolorum?</p>
+        </figcaption>
+        
+</figure>
+<figure>
+    <img src="alfa-romeo-car-show-8wwz5c4kx00emfx8.jpg" alt="">
+    <figcaption>
+        <h1>alfa romeo biography</h1>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Incidunt at doloremque dolorem sapiente tempore quidem mollitia possimus eius, quaerat quos, dicta ex 
+            exercitationem iusto assumenda. In quisquam voluptatibus rem dolorum?</p>
+    </figcaption>
+    
+</figure>
+<figure>
+    <img src="plant-field-alfa-romeo-giulia-320qpng31m33a1ax (1).jpg" alt="">
+    <figcaption>
+        <h1>alfa romeo biography</h1>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Incidunt at doloremque dolorem sapiente tempore quidem mollitia possimus eius, quaerat quos, dicta ex 
+            exercitationem iusto assumenda. In quisquam voluptatibus rem dolorum?</p>
+    </figcaption>
+    
+</figure>
+</div>
+<div class="pro7">
+    <marquee behavior="" direction="">matin.noorvash.web</marquee>
+    <img src="alfa-romeo-stelvio-quadrifoglio-zvqnddrtx0ysemp0.jpg" alt="">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+        elit. Cupiditate sit fugit dolorem quo est porro illo dignissimos 
+        ab dicta doloremque atque non 
+        necessitatibus mollitia eos neque, adipisci aliquam rerum 
+        assumenda?Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Eos quas soluta culpa minus, repellendus expedita perspiciatis,
+         repellat tenetur quibusdam iure, ipsum tempora? Aliquam
+          voluptas odit 
+        vel quisquam hic doloremque aperiam.</p>
+
+</div>
+  <div class="pro8">
+    <h1>conection whith me</h1>
+    <ul>
+        <li>
+            <a href=""><i class="bi bi-linkedin"></i>matin noorvash</a>
+            
+            <a href=""><i class="bi bi-git"></i>matinnoorvash007</a>
+            
+            <a href=""><i class="bi bi-instagram"></i>matin.noorvash.web</a>
+        </li>
+    </ul>
+
+  </div>
+   
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
